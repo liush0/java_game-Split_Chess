@@ -79,3 +79,9 @@ impl WebGame {
         unsafe {console_log!("游戏重置");}
     }
 }
+
+impl Default for WebGame {
+    fn default() -> Self {
+        WebGame::new()
+    }
+}
