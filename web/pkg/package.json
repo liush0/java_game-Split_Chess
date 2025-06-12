@@ -1,0 +1,15 @@
+{
+  "name": "my_qipan",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "my_qipan_bg.wasm",
+    "my_qipan.js",
+    "my_qipan.d.ts"
+  ],
+  "main": "my_qipan.js",
+  "types": "my_qipan.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
