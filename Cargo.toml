@@ -1,0 +1,21 @@
+[package]
+name = "my_qipan"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "my_qipan"
+path = "src/lib.rs"
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "game"
+path = "src/main.rs"
+
+[dependencies]
+wasm-bindgen = "0.2"
+web-sys = "0.3"
+
+[dependencies.getrandom]
+version = "0.2"
+features = ["js"]
